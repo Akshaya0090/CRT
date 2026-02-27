@@ -1,5 +1,13 @@
-def Ticket_Pricing(n: int) -> int:
-   pass
+def Ticket_Pricing(n):
+    if n<5:
+        return("FREE")
+    elif n>=5 and n<=17:
+        return(10)
+    elif n>=18 and n<=64:
+        return(20)
+    else:
+        return(15)
+   
 
 
 if __name__ == '__main__':
