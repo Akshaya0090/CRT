@@ -1,8 +1,11 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+nums = list(map(int, input().split()))
 
-while b != 0:
-    a, b = b, a % b
+freq = {}
 
-print("GCD is:", a)
+for num in nums:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
 
+print(freq)
